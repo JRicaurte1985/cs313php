@@ -30,7 +30,13 @@ p
     	margin-bottom: 60px;
     	margin-right: 50px;
     	margin-left: 50px;
-	text-align: center;
+	text-align: center;	
 	font-size: 25px;
-	
+}
+
+
+
+a:hover 
+{
+	background-color: teal;
 }

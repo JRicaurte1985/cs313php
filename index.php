@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Jose Ricaurte's Homepage</title>
   <link rel="stylesheet" type="text/css" href="cs313homepage.css">
+
 </head>
 
 
@@ -29,6 +30,8 @@
 	<p>
 		<a href =  "assignmentsPage.php">CS 313 Assignments</a>
 	</p>
+
+
 
 </body>
 </html>
