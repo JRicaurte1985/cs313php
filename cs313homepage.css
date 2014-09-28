@@ -1,0 +1,36 @@
+body 
+{
+
+	background-image:url('bg.jpg');
+}
+
+
+h1
+{
+    	color: black;
+    	text-align: center;
+	font-size: 50px;
+}
+
+
+.intro
+{
+	margin-top: 20px;
+    	margin-bottom: 60px;
+    	margin-right: 70px;
+    	margin-left: 70px;
+	text-align: center;
+	font-size: 25px;
+}
+
+
+p
+{
+	margin-top: 10px;
+    	margin-bottom: 60px;
+    	margin-right: 50px;
+    	margin-left: 50px;
+	text-align: center;
+	font-size: 25px;
+	
+}
