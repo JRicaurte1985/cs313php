@@ -1,0 +1,37 @@
+<html>
+<head>
+  <title>Jose Ricaurte PHP Survey Results</title> 
+</head>
+
+<body>
+<!--here I want to check first if they voted or not. If so I open a file called votingResult.txt. If it doesn't exist, create it and use a for loop to write 14 consecutive zeroes.
+
+I check the post array and do a series of if statements to see what values need to be incremented. I can make a local temp array and store the value read in the file plus the increment. once the local array is filled I rewrite the file with its values. I can then display the results straight from the txt file-->
+  <h1 Survey Results></h1>
+
+  <h3>What is your favorite genre of music?</h3>
+  Pop/Rock: <!--access txt file first value--><br/>
+  Jazz: <!--access txt file second value --><br/>
+  Gospel: <!--etc--><br/>
+  Country: <br/><br/>
+
+  <h3>What is your favorite instrument?</h3>
+  Guitar: <br/>
+  Violin: <br/>
+  Piano: <br/>
+  Trumpet: <br/><br/>
+
+  <h3>How many times a week do you exercise?</h3>
+  Zero times a week:  <br/>
+  Once a week:   <br/>
+  Twice a week:  <br/>
+  Three or more times a week:  <br/><br/>
+
+  <h3>Do you like going to the movies?</h3>
+  Yes:  <br/>
+  No: <br/><br/>
+
+
+</body>
+</html>
+
