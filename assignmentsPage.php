@@ -8,7 +8,8 @@
 </head>
 
 <body>
-		<a href="php_survey.php">Survey Assignment</a>
+		<a href="php_survey.php">Survey Assignment</a><br />
+        <a href="pc_part_picker_lite_home.php">PC Part Picker Lite</a>
 	
 </body>
 </html>
