@@ -81,5 +81,5 @@
         }
     }
 
-    echo "</table></html>";
+    echo "</table></body></html>";
 ?>
