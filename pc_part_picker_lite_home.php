@@ -1,24 +1,41 @@
 <?php
+
     include 'getDB.php';
-
     $db = loadDatabase();
-
+    
     $stmt = $db->query("SELECT mb.motherboard_name, m.manufacturer_name, mb.motherboard_socket_cpu,
     mb.motherboard_form_factor, mb.motherboard_ram_slots, mb.motherboard_max_ram, mb.motherboard_price
     FROM motherboard mb INNER JOIN manufacturer m ON mb.manufacturer_id = m.manufacturer_id");
-
+    
+    $stmt2 = $db->query("SELECT c.cpu_name, m.manufacturer_name, c.cpu_price, c.cpu_speed, c.cpu_cores,
+    c.cpu_tdp, c.cpu_benchmark_rating FROM cpu c INNER JOIN manufacturer m ON c.manufacturer_id =
+    m.manufacturer_id");
+    
     $mbs = $stmt->fetchAll(PDO::FETCH_ASSOC);
+    $cpus = $stmt2->fetchAll(PDO::FETCH_ASSOC);
+
+    echo "
+    <!doctype html>
+      <head>
+        <meta charset='utf-8'>
+        <title>Jose Ricaurte's Homepage</title>
+        <link rel='stylesheet' type='text/css' href='cs313homepage.css'>
+      </head>
+      
+      <body>
+
+      <h1><mark>PC Part Picker Lite</mark></h1><br /><br />";
 
     echo "<table>
           <tr>
-          <th>Motherboard</th>
+            <th>Motherboard</th>
             <th>Manufacturer</th>
             <th>Socket/CPU</th>
             <th>Form Factor</th>
             <th>RAM Slots</th>
             <th>Max RAM</th>
             <th>Price</th>
-        </tr>";
+           </tr>";
 
     if (count($mbs) > 0)
     {
@@ -36,24 +53,8 @@
         }
     }
 
-
-    $stmt2 = $db->query("SELECT c.cpu_name, m.manufacturer_name, c.cpu_price, c.cpu_speed, c.cpu_cores,
-    c.cpu_tdp, c.cpu_benchmark_rating FROM cpu c INNER JOIN manufacturer m ON c.manufacturer_id =
-    m.manufacturer_id");
-
-    $cpus = $stmt2->fetchAll(PDO::FETCH_ASSOC);
-
-    echo "<!doctype html>
-    <head>
-        <meta charset='utf-8'>
-        <title>Jose Ricaurte's Homepage</title>
-        <link rel='stylesheet' type='text/css' href='cs313homepage.css'>
-    </head>
-
-    <h1><mark>PC Part Picker Lite</mark></h1><br /><br />
-
-    <table>
-        <tr>
+    echo "</table><table>
+           <tr>
             <th>CPU</th>
             <th>Manufacturer</th>
             <th>Speed</th>
@@ -61,7 +62,7 @@
             <th>TDP</th>
             <th>PassMark Rating</th>
             <th>Price</th>
-        </tr>";
+           </tr>";
     
     
     if (count($cpus) > 0)
