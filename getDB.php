@@ -8,7 +8,7 @@ function loadDatabase()
     $dbUser = "";
     $dbPassword = "";
     
-    $dbName = "pc_part_picker_lite";
+    $dbName = "php";
     $openShiftVar = getenv('OPENSHIFT_MYSQL_DB_HOST');
 
     if ($openShiftVar === null || $openShiftVar == "")
@@ -32,7 +32,7 @@ function loadDatabase()
     
     try
     {
-        $db = new PDO("mysql:host=$dbHost;dbname=$dbName", $dbUser, $dbPassword);
+        $db = new PDO("mysql:host=$dbHost:$dbPort;dbname=$dbName", $dbUser, $dbPassword);
         return $db;
     }
     catch (PDOException $ex)
