@@ -7,18 +7,18 @@ body
 
 h1
 {
-    	color: black;
-    	text-align: center;
-	font-size: 50px;
+    color: black;
+    text-align: center;
+    font-size: 50px;
 }
 
 
 .intro
 {
 	margin-top: 20px;
-    	margin-bottom: 60px;
-    	margin-right: 70px;
-    	margin-left: 70px;
+    margin-bottom: 60px;
+    margin-right: 70px;
+    margin-left: 70px;
 	text-align: center;
 	font-size: 25px;
 }
@@ -27,14 +27,21 @@ h1
 p
 {
 	margin-top: 10px;
-    	margin-bottom: 60px;
-    	margin-right: 50px;
-    	margin-left: 50px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
 	text-align: center;	
 	font-size: 25px;
 }
 
-
+table, td, th 
+{
+    margin-top: 10px;
+    margin-bottom: 60px;
+    margin-right: 50px;
+    margin-left: 50px;
+    border: 1px solid green;
+}
 
 a:hover 
 {
