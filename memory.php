@@ -76,7 +76,7 @@
             echo "<td> $mem[memory_cas]</td>"; 
             echo "<td>$mem[memory_modules]</td>"; 
             echo "<td>$mem[memory_size]</td>";
-            echo "<td>$mem[memory_price]</td>";
+            echo "<td>$$mem[memory_price]</td>";
             echo "</tr>";
         }
     }

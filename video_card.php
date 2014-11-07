@@ -75,7 +75,7 @@
             echo "<td>$vid[video_card_memory]</td>";
             echo "<td> $vid[video_card_core_clock]</td>"; 
             echo "<td>$vid[video_card_benchmark_rating]</td>"; 
-            echo "<td>$vid[video_card_price]</td>";
+            echo "<td>$$vid[video_card_price]</td>";
             echo "</tr>";
         }
     }

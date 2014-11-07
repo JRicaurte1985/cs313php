@@ -74,7 +74,7 @@
             echo "<td>$stor[storage_type]</td>";
             echo "<td> $stor[storage_capacity]</td>"; 
             echo "<td>$stor[storage_cache]</td>"; 
-            echo "<td>$stor[storage_price]</td>";
+            echo "<td>$$stor[storage_price]</td>";
             echo "</tr>";
         }
     }
