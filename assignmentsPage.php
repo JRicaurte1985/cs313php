@@ -9,6 +9,7 @@
 
 <body>
 		<a href="php_survey.php">Survey Assignment</a>
+        <a href="pcpartpicker_index.php">PC Part Picker Lite</a>
 	
 </body>
 </html>
